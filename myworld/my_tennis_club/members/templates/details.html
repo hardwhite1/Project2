@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends "master.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+        Details about {{ mymember.firstname }} {{ mymember.lastname }}
+    {% endblock %}
+</head>
+<body>
+{% block content %}
+<div class="mycard">
+    <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+    <p> Phone: {{ mymember.phone }}</p>
+    <p>Member since: {{ mymember.joined_date}}</p>
+</div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends "master.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+        My tennis club-list of all members
+    {% endblock %}
+</head>
+<body style="background-color: grey">
+{% block content %}
+<div class="mycard">
+    <h1>Memebrs</h1>
+    <ul>
+        {% for x in mymembers %}
+        <li onclick="window.location = 'details/{{ x.id }}' "> {{ x.firstname }} {{ x.lastname }}</li>
+        {% endfor %}
+    </ul>
+    <p>Back <a href="/"> Home</a></p>
+</div>
+
+
+{% endblock %}
+
+</body>
+</html>

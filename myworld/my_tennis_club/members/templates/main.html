@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends "master.html"%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+      My tennis club
+    {% endblock %}
+</head>
+<body>
+{% block content %}
+  <div class="main">
+      <h1> My tennis club</h1>
+      <h3> Members </h3>
+      <p>  Check out all our <a href="members/"> Members</a></p>
+      <p>  Check out all our Info <a href="About/"> About Us </a></p>
+  </div>
+{% endblock %}
+</body>
+</html>
